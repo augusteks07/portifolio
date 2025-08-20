@@ -11,169 +11,6 @@
 
 <body>
 
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-            color: white;
-        }
-
-        .augusto {
-            color: white;
-            margin-left: 4%;
-            margin-right: auto;
-        }
-
-        .span-augusto {
-            background: linear-gradient(45deg, #2bff00, #31940a);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .page {
-            height: 100vh;
-            background-color: black;
-            border-bottom: 2px #00ff00 solid;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .p1 {
-            padding-top: 10vh;
-            justify-content: center;
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.7);
-            height: 8vh;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            gap: 10px;
-            border-bottom: #00ff00 solid 2px;
-            z-index: 1;
-        }
-
-        .button {
-            background: none;
-            border: none;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 15px;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 10px;
-            position: relative;
-        }
-
-        .button::before {
-            content: "";
-            width: 100%;
-            height: 5px;
-            border-radius: 5px;
-            background: linear-gradient(45deg, #00ff00, #31940a);
-            z-index: 1;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-
-            transform-origin: center;
-            transform: scaleX(0);
-            transition: 0.8s;
-        }
-
-        .button:hover::before {
-            transform: scaleX(1);
-        }
-
-        .b3 {
-            margin-right: 4vw;
-        }
-
-        .header_images {
-            width: 25px;
-            height: 25px;
-        }
-
-        .saudacao {
-            text-align: center;
-            transform: translateY(-100%);
-        }
-
-        .oq_sou::before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #00ff00;
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .p2 {
-            align-items: center;
-        }
-
-        .borda {
-            background-color: #00ff00;
-            margin-top: 30px;
-            border-radius: 21px;
-            padding: 5px;
-            box-shadow: 0px 0px 50px 1px #00ff00;
-        }
-
-        .skills {
-            margin-top: 5vh;
-            margin-bottom: 2vh;
-        }
-
-        .skill_imgs {
-            width: 80vw;
-            height: max-content + 100px;
-            background-color: #101010;
-            border-radius: 20px;
-            display: flex;
-            padding: 50px;
-            gap: 5vw;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .sk_img {
-            width: 100px;
-            height: 80px;
-            transition: 0.3s;
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .sk_img:hover {
-            scale: 1.1;
-        }
-
-        .sk_img::before {
-            content: attr(data-tooltip);
-            position: absolute;
-            top: -35px;
-            text-align: center;
-            font-size: 20px;
-            opacity: 0;
-            transition: 0.3s;
-        }
-
-        .sk_img:hover::before {
-            opacity: 1;
-        }
-    </style>
-
     <!-- https://youtube.com/shorts/DBAbu46TaW8?si=SMYFEYayDkbIdQcI -->
 
     <header>
@@ -197,7 +34,7 @@
 
     <div class="page p2">
 
-        <h1 class="skills">Habilidades: </h1>
+        <h1 class="skills" style="margin-top: 0;">Habilidades: </h1>
 
         <div class="borda">
 
@@ -208,18 +45,48 @@
                 <div class="sk_img" data-tooltip="JavaScript"><img class="sk_img" src="./imagens/script-java.png"></div>
                 <div class="sk_img" data-tooltip="Git"><img src="./imagens/git.png" class="sk_img"></div>
                 <div class="sk_img" data-tooltip="GitHub"><img src="./imagens/github.png" class="sk_img"></div>
+                <div class="sk_img" data-tooltip="Figma"><img src="./imagens/figma.png" class="sk_img"></div>
 
             </div>
 
         </div>
 
+        <h1 id="learning" class="skills">Aprendendo</h1>
+
+        <div class="borda">
+
+            <div class="skill_imgs">
+
+                <div class="sk_img" data-tooltip="NodeJS"><img class="sk_img" src="./imagens/programing.png"></div>
+                <div class="sk_img" data-tooltip="ReactJS"><img class="sk_img" src="./imagens/atom.png"></div>
+                <div class="sk_img" data-tooltip="MySQL"><img class="sk_img" src="./imagens/mysql.png"></div>
+
+            </div>
+
+        </div>
 
     </div>
 
     <div class="page p3">
 
+        <h1 class="skills" style="margin-top: 0;">Projetos:</h1>
+
+        <div class="projetos">
+
+            <div class="project pro2"><a href="https://augusteks07.github.io/JS-Calculator/" class="projects_links" target="_blank">JS-Calculator</a><br> <img src="./imagens/calculadoraProject.jpeg" class="project-img"> <p>Uma calculadora com modo noturno! lógica feita com javascript</p></div>
+            <div class="project pro1"><a href="https://augusteks07.github.io/SonicGameSite/" class="projects_links" target="_blank">SonicGameSite</a> <br> <img src="./imagens/sonicProject.jpeg" class="project-img"> <p>um pequeno jogo inspirado em sonic que eu fiz a fim de treinar javascript</p></div>
+            <div class="project embreve"> <h2 id="embreve">Em breve...</h2> <br></div>
+
+        </div>
+
+    </div>
+
+    <div class="page p4">
+
     </div>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
