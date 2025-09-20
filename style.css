@@ -34,17 +34,18 @@
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 8vh;
     width: 100%;
     position: fixed;
     top: 0;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: end;
     gap: 10px;
     border-bottom: #00ff00 solid 2px;
     z-index: 1;
+    backdrop-filter: blur(5px);
 }
 
 .button {
@@ -116,13 +117,12 @@ header {
 
 .skill_imgs {
     width: 80vw;
-    height: max-content;
+    height: 200px;
     background-color: #101010;
     border-radius: 20px;
     display: flex;
     padding: 50px;
-    gap: 6vw;
-    flex-wrap: wrap;
+    gap: 4vw;
     justify-content: center;
 }
 
@@ -197,8 +197,23 @@ header {
 }
 
 .sobre-eu {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.sobreMim {
+    position: relative;
+}
+
+.sobreMim::after {
+    content: "";
+    width: 170px;
+    height: 4px;
+    background-color: #00ff00;
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    bottom: -10px;
 }
 
 footer {
@@ -208,7 +223,16 @@ footer {
 }
 
 i {
-    width: 60px;
-    height: 60px;
+    font-size: 30px;
     display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-github:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: #da0ea7;
 }
