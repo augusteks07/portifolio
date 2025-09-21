@@ -18,14 +18,14 @@
 
         <h2 class="augusto">Meu portifólio</h2>
 
-        <button class="button b0"><img class="header_images" src="./imagens/home.png"> Início</button>
-        <button class="button b1"><img class="header_images" src="./imagens/habilidades.png">Habilidades</button>
-        <button class="button b2"><img class="header_images" src="./imagens/codigo.png">Projetos</button>
-        <button class="button b3"><img class="header_images" src="./imagens/pessoa.png">Sobre mim</button>
+        <button class="button b0" onclick="document.getElementById('p1').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/home.png"> Início</button>
+        <button class="button b1" onclick="document.getElementById('p2').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/habilidades.png">Habilidades</button>
+        <button class="button b2" onclick="document.getElementById('p3').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/codigo.png">Projetos</button>
+        <button class="button b3" onclick="document.getElementById('p4').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/pessoa.png">Sobre mim</button>
 
     </header>
 
-    <div class="page p1">
+    <div class="page p1" id="p1">
 
         <h1 class="saudacao">Olá, me chamo <span class="span-augusto">Augusto César</span></h1>
         <p class="oq_sou">Desenvolvedor <span class="span-augusto">Front-end</span>, futuro Fullstack e entusiasta de
@@ -33,7 +33,7 @@
 
     </div>
 
-    <div class="page p2">
+    <div class="page p2" id="p2">
 
         <h1 class="skills" style="margin-top: 0;">Habilidades: </h1>
 
@@ -68,7 +68,7 @@
 
     </div>
 
-    <div class="page p3">
+    <div class="page p3" id="p3">
 
         <h1 class="skills" style="margin-top: 0;">Projetos:</h1>
 
@@ -82,7 +82,7 @@
 
     </div>
 
-    <div class="page p4">
+    <div class="page p4" id="p4">
 
         <h1 class="skills sobreMim">Sobre mim: </h1>
         <p class="sobre-eu">Comecei na área da tecnologia em 2024, ao ingressar no ensino médio técnico em Informática no Aristófanes Fernandes. Desde então, venho aprimorando minhas habilidades e buscando constantemente novos desafios que me permitam crescer como desenvolvedor.</p>
@@ -94,7 +94,7 @@
         <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
             <p style="margin-right: 30vw;"> © Augusto César - 2025</p>
            <a href="https://github.com/augusteks07/" target="_blank"> <i class="fab fa-github"></i></a>
-            <i class="fab fa-instagram"></i>
+           <a href="https://instagram.com/augustooc7/" target="_blank"> <i class="fab fa-instagram"></i></a>
         </div>
 
     </footer>
