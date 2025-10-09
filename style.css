@@ -24,7 +24,7 @@
 }
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     border-bottom: 2px #00ff00 solid;
     display: flex;
@@ -75,7 +75,6 @@ header {
     position: absolute;
     bottom: -5px;
     left: 0;
-
     transform-origin: center;
     transform: scaleX(0);
     transition: 0.8s;
@@ -120,7 +119,7 @@ header {
 }
 
 .skill_imgs {
-    width: max-content;
+    width: 80vw;
     height: 200px;
     background-color: #101010;
     border-radius: 20px;
@@ -128,6 +127,7 @@ header {
     padding: 50px;
     gap: 4vw;
     justify-content: center;
+    align-items: center;
 }
 
 .sk_img {
@@ -239,4 +239,28 @@ i {
 
 .fa-instagram:hover {
     color: #da0ea7;
+}
+
+.fa-linkedin:hover {
+    color: rgb(51, 154, 223);
+}
+
+.menu {
+    background-color: black;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .sk_img {
+        width: 20px;
+        height: 30px;
+    }
+    .skill_imgs {
+        padding: 10px;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .button:hover::before {
+        transform: scaleX(0);
+    }
 }
