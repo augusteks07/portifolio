@@ -15,13 +15,20 @@
     <header>
 
         <h2 class="augusto">Meu portifólio</h2>
-
+        
         <button class="button b0" onclick="document.getElementById('p1').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/home.png"> Início</button>
         <button class="button b1" onclick="document.getElementById('p2').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/habilidades.png">Habilidades</button>
         <button class="button b2" onclick="document.getElementById('p3').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/codigo.png">Projetos</button>
         <button class="button b3" onclick="document.getElementById('p4').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/pessoa.png">Sobre mim</button>
 
-        <button style="display: none;" class="menu"><img src="./imagens/menu.png" class="menuImg"></button>
+        <button class="menu" onclick="menuFunc()"><img src="./imagens/menu.png" class="menuImg" ></button>
+
+        <div class="menuDiv">
+            <button class="button m0" onclick="document.getElementById('p1').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/home.png"> Início</button>
+            <button class="button m1" onclick="document.getElementById('p2').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/habilidades.png">Habilidades</button>
+            <button class="button m2" onclick="document.getElementById('p3').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/codigo.png">Projetos</button>
+            <button class="button m3" onclick="document.getElementById('p4').scrollIntoView({ behavior: 'smooth' });"><img class="header_images" src="./imagens/pessoa.png">Sobre mim</button>
+        </div>
 
     </header>
 
@@ -74,8 +81,8 @@
 
         <div class="projetos">
 
-            <div class="project pro2"><a href="https://augusteks07.github.io/JS-Calculator/" class="projects_links" target="_blank">JS-Calculator</a><br> <img src="./imagens/calculadoraProject.jpeg" class="project-img"> <p style="font-size: 23px; margin-top: 10px;">Uma calculadora com modo noturno! lógica feita com javascript</p></div>
-            <div class="project pro1"><a href="https://augusteks07.github.io/SonicGameSite/" class="projects_links" target="_blank">SonicGameSite</a> <br> <img src="./imagens/sonicProject.jpeg" class="project-img"> <p style="font-size: 23px; margin-top: 10px;">um pequeno jogo inspirado em sonic que eu fiz a fim de treinar javascript</p></div>
+            <div class="project pro2"><a href="https://augusteks07.github.io/JS-Calculator/" class="projects_links" target="_blank">JS-Calculator</a><br> <img src="./imagens/calculadoraProject.jpeg" class="project-img"> <p style="margin-top: 10px;">calculadora com JS</p></div>
+            <div class="project pro1"><a href="https://augusteks07.github.io/SonicGameSite/" class="projects_links" target="_blank">SonicGameSite</a> <br> <img src="./imagens/sonicProject.jpeg" class="project-img"> <p style= "margin-top: 10px;">Joguinho feito com JS</p></div>
             <div class="project embreve"> <h2 id="embreve">Em breve...</h2> <br></div>
 
         </div>
@@ -84,7 +91,7 @@
 
     <div class="page p4" id="p4">
 
-        <h1 class="skills sobreMim">Sobre mim: </h1>
+        <h1 class="sobreMim">Sobre mim: </h1>
         <p class="sobre-eu">Comecei na área da tecnologia em 2024, ao ingressar no ensino médio técnico em Informática no Aristófanes Fernandes. Desde então, venho aprimorando minhas habilidades e buscando constantemente novos desafios que me permitam crescer como desenvolvedor.</p>
 
     </div>
@@ -92,7 +99,7 @@
     <footer>
 
         <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
-            <p style="margin-right: 30vw;"> © Augusto César - 2025</p>
+            <p class="minhaMarca"> © Augusto César - 2025</p>
            <a href="https://github.com/augusteks07/" target="_blank"> <i class="fab fa-github"></i></a>
            <a href="https://instagram.com/augustooc7/" target="_blank"> <i class="fab fa-instagram"></i></a>
            <a href="https://www.linkedin.com/in/augusto-c%C3%A9sar-dantas-de-lima-12273337a/" target="_blank"> <i class="fab fa-linkedin"></i></a>

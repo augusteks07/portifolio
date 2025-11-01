@@ -1,6 +1,7 @@
 let increasing = true
 
 let dots = 0
+let contador = 0
 
 setInterval(() => {
 
@@ -31,3 +32,20 @@ setInterval(() => {
     document.getElementById('embreve').textContent = "Em breve" + pontos
 
 }, 1000);
+
+function menuFunc() {
+    if (contador %2 == 0) {
+        abrirMenu()
+    } else {
+        fecharMenu()
+    }
+    contador++
+}
+
+function abrirMenu() {
+    document.querySelector(".menuDiv").style.display = "flex"
+}
+
+function fecharMenu() {
+    document.querySelector(".menuDiv").style.display = "none"
+}

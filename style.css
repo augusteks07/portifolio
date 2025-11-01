@@ -14,6 +14,11 @@
     color: white;
     margin-left: 4%;
     margin-right: auto;
+    font-size: 20px;
+}
+
+p {
+    font-size: 25px;
 }
 
 .span-augusto {
@@ -207,6 +212,7 @@ header {
 
 .sobreMim {
     position: relative;
+    margin: 60px;
 }
 
 .sobreMim::after {
@@ -224,6 +230,10 @@ footer {
     width: 100%;
     background-color: #101010;
     padding: 10px;
+}
+
+.minhaMarca {
+    margin-right: 30vw
 }
 
 i {
@@ -248,12 +258,25 @@ i {
 .menu {
     background-color: black;
     border: none;
+    display: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.menuDiv {
+    display: none;
+    flex-direction: column;
+    background-color: gray;
+    position: absolute;
+    bottom: -200px;
+    right: 20px;
+    border-radius: 15px;
 }
 
 @media (max-width: 600px) {
     .sk_img {
-        width: 20px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
     .skill_imgs {
         padding: 10px;
@@ -262,5 +285,45 @@ i {
     }
     .button:hover::before {
         transform: scaleX(0);
+    }
+    .b0,.b1, .b2, .b3{
+        display: none;
+    }
+    .menu {
+        display: inline;
+    }
+    .augusto, .sobre-eu{
+        font-size: 15px;
+    }
+    .oq_sou {
+        font-size: 10px;
+    }
+    .sobreMim, .skills, .saudacao{
+        font-size: 20px;
+    }
+    .sobreMim::after {
+        width: 110px;
+    }
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .project {
+        width: 300px;
+        height: 300px;
+    }
+    .project-img {
+        height: 150px;
+    }
+    .p3 {
+        height: 170vh;
+    }
+    .projects_links {
+        margin-bottom: 10px;
+    }
+    .minhaMarca {
+        font-size: 10px;
+        margin-right: 15vw;
     }
 }
