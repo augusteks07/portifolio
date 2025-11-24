@@ -163,46 +163,47 @@ header {
     opacity: 1;
 }
 
-.projetos {
+.container-projetos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+    padding: 20px;
+    gap: 50px;
 }
 
 .project {
-    width: 22vw;
-    height: 60vh;
-    background-color: #101010;
+    width: 280px;
+    height: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: flex-end;
     align-items: center;
-    border-radius: 15px;
-    transition: 0.5s;
+    background-size: cover;
+    background-position: center center;
+    background-color: #101010;
 }
 
 .project:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px;
 }
 
-.project-img {
+.proInfo {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
     width: 100%;
-    height: 250px;
-    border-radius: 15px;
 }
 
 .embreve {
     justify-content: center;
-}
-
-.projects_links {
-    text-decoration: none;
-    color: #0000ee;
-    margin-bottom: 20px;
-}
-
-.projects_links:hover {
-    text-decoration: underline;
 }
 
 .sobre-eu {
@@ -278,50 +279,63 @@ i {
         width: 50px;
         height: 50px;
     }
+
     .skill_imgs {
         padding: 10px;
         gap: 5px;
         flex-wrap: wrap;
     }
+
     .button:hover::before {
         transform: scaleX(0);
     }
-    .b0,.b1, .b2, .b3{
+
+    .b0,
+    .b1,
+    .b2,
+    .b3 {
         display: none;
     }
+
     .menu {
         display: inline;
     }
-    .augusto, .sobre-eu{
+
+    .augusto,
+    .sobre-eu {
         font-size: 15px;
     }
+
     .oq_sou {
         font-size: 10px;
     }
-    .sobreMim, .skills, .saudacao{
+
+    .sobreMim,
+    .skills,
+    .saudacao {
         font-size: 20px;
     }
+
     .sobreMim::after {
         width: 110px;
     }
-    .projetos {
+
+    .container-projetos {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
+
     .project {
         width: 300px;
         height: 300px;
     }
-    .project-img {
-        height: 150px;
-    }
+
     .p3 {
-        height: 170vh;
+        height: max-content;
+        padding: 50px;
     }
-    .projects_links {
-        margin-bottom: 10px;
-    }
+
     .minhaMarca {
         font-size: 10px;
         margin-right: 15vw;
